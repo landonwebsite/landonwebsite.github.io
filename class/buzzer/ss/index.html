@@ -14,14 +14,14 @@
             }
         </style>
     </head>
-    <body>
+    <body id="body">
         <div id="image">
             <a href="#buzz-green">
                 <img src="ss.png" alt="Silver Swords Flag" height="100%" width="100%">
             </a>
         </div>
         <div id="buzz-green">
-            <br>
+            <h1 id="score">Score: 0</h1>
             <br>
             <br>
             <br>
@@ -60,5 +60,32 @@
             <br>
             <br>
         </div>   
+        <script>
+            let score = 0;
+            document.getElementById("body").addEventListener("keydown", function (event) {
+            	console.log("Key Press");
+                if (event.shiftKey && event.key === "!") {
+                    score = score + 100;
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                    console.log("Score + 100 = " + score);
+                } else if (event.shiftKey && event.key === "@") {
+                    score = score + 200;
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                    console.log("Score + 200 = " + score);
+                } else if (event.shiftKey && event.key === "#") {
+                    score = score + 300;
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                    console.log("Score + 300 = " + score);
+                } else if (event.shiftKey && event.key === "$") {
+                    score = score + 400;
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                    console.log("Score + 400 = " + score);
+                } else if (event.shiftKey && event.key === "%") {
+                    score = score + 500;
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                    console.log("Score + 500 = " + score);
+                }
+            });
+        </script>
     </body>
 </html>
