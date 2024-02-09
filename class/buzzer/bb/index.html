@@ -8,6 +8,7 @@
         <style>
             body {
                 background-color: #38761d;
+                height: 100vh;
             }
             #buzz-green {
                 background-color: lime;
@@ -15,27 +16,6 @@
         </style>
     </head>
     <body>
-        <script>
-            let score = 0;
-            document.body.addEventListener("keydown", function(event) {
-                if (event.shiftKey && event.key === "1") {
-                    score = score + 100;
-                    document.getElementById("score").innerHTML = "Score: " + score
-                } else if (event.shiftKey && event.key === "2") {
-                    score = score + 200;
-                    document.getElementById("score").innerHTML = "Score: " + score
-                } else if (event.shiftKey && event.key === "3") {
-                    score = score + 300;
-                    document.getElementById("score").innerHTML = "Score: " + score
-                } else if (event.shiftKey && event.key === "4") {
-                    score = score + 400;
-                    document.getElementById("score").innerHTML = "Score: " + score
-                } else if (event.shiftKey && event.key === "5") {
-                    score = score + 500;
-                    document.getElementById("score").innerHTML = "Score: " + score
-                }
-            });
-        </script>
         <div id="image">
             <a href="#buzz-green">
                 <img src="bb.png" alt="Bronze Battlers Flag" height="100%" width="100%">
@@ -81,5 +61,26 @@
             <br>
             <br>
         </div>   
+        <script>
+            let score = 0;
+            document.body.addEventListener("keydown", function(event) {
+                if (event.shiftKey && event.key === "1") {
+                    score = score + 100;
+                    document.getElementById("score").innerHTML = "Score: " + score
+                } else if (event.shiftKey && event.key === "2") {
+                    score = score + 200;
+                    document.getElementById("score").innerHTML = "Score: " + score
+                } else if (event.shiftKey && event.key === "3") {
+                    score = score + 300;
+                    document.getElementById("score").innerHTML = "Score: " + score
+                } else if (event.shiftKey && event.key === "4") {
+                    score = score + 400;
+                    document.getElementById("score").innerHTML = "Score: " + score
+                } else if (event.shiftKey && event.key === "5") {
+                    score = score + 500;
+                    document.getElementById("score").innerHTML = "Score: " + score
+                }
+            });
+        </script>
     </body>
 </html>
