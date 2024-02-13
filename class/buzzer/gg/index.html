@@ -65,25 +65,54 @@
             document.getElementById("body").addEventListener("keydown", function (event) {
             	console.log("Key Press");
                 if (event.shiftKey && event.key === "!") {
-                    score = score + 100;
+                    if (event.ctrlKey) {
+                        score = score - 100;
+                        console.log("Score - 100 = " + score);
+                    } else {
+                        score = score + 100;
+                        console.log("Score + 100 = " + score);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + score;
-                    console.log("Score + 100 = " + score);
                 } else if (event.shiftKey && event.key === "@") {
-                    score = score + 200;
+                    if (event.ctrlKey) {
+                        score = score - 200;
+                        console.log("Score - 200 = " + score);
+                    } else {
+                        score = score + 200;
+                        console.log("Score + 200 = " + score);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + score;
-                    console.log("Score + 200 = " + score);
                 } else if (event.shiftKey && event.key === "#") {
-                    score = score + 300;
+                    if (event.ctrlKey) {
+                        score = score - 300;
+                        console.log("Score - 300 = " + score);
+                    } else {
+                        score = score + 300;
+                        console.log("Score + 300 = " + score);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + score;
-                    console.log("Score + 300 = " + score);
                 } else if (event.shiftKey && event.key === "$") {
-                    score = score + 400;
+                    if (event.ctrlKey) {
+                        score = score - 400;
+                        console.log("Score - 400 = " + score);
+                    } else {
+                        score = score + 400;
+                        console.log("Score + 400 = " + score);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + score;
-                    console.log("Score + 400 = " + score);
                 } else if (event.shiftKey && event.key === "%") {
-                    score = score + 500;
+                    if (event.ctrlKey) {
+                        score = score - 500;
+                        console.log("Score - 500 = " + score);
+                    } else {
+                        score = score + 500;
+                        console.log("Score + 500 = " + score);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + score;
-                    console.log("Score + 500 = " + score);
+                } else if (event.shiftKey && event.key === ")") {
+                    score = 0;
+                    console.log("Score reset to 0");
+                    document.getElementById("score").innerHTML = "Score: " + score;
                 }
             });
         </script>
