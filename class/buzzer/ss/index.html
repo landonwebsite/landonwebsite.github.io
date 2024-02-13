@@ -112,7 +112,7 @@
                 } else if (event.shiftKey && event.key === ")") {
                     score = 0;
                     console.log("Score reset to 0");
-                    document
+                    document.getElementById("score").innerHTML = "Score: " + score;
                 }
             });
         </script>
