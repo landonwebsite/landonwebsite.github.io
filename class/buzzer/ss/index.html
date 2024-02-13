@@ -65,79 +65,47 @@
             let changeScore = true;
             document.getElementById("body").addEventListener("keydown", function (event) {
             	console.log("Key Press");
-                if (changeScore) { 
-                    if (event.shiftKey === true) {
-                        if (event.key === "!") {
-                            score = score + 100;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score + 100 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "@") {
-                            score = score + 200;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score + 200 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "#") {
-                            score = score + 300;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score + 300 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "$") {
-                            score = score + 400;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score + 400 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "%") {
-                            score = score + 500;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score + 500 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === ")" {
-                            score = 0;
-                            document.getElementById("score").innerHTML = "Score: 0";
-                            console.log("Score reset to 0");
-                        }
-                    } else if (event.altKey = true) {
-                        if (event.key === "1") {
-                            score = score - 100;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score - 100 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "2") {
-                            score = score - 200;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score - 200 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "3") {
-                            score = score - 300;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score - 300 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "4") {
-                            score = score - 400;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score - 400 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "5") {
-                            score = score - 500;
-                            document.getElementById("score").innerHTML = "Score: " + score;
-                            changeScore = false;
-                            console.log("Score - 500 = " + score);
-                            setTimeout(() => changeScore = true, 1000);
-                        } else if (event.key === "0" {
-                            score = 0;
-                            document.getElementById("score").innerHTML = "Score: 0";
-                            console.log("Score reset to 0");
-                        }
+                if (changescore = true) {
+                    if (event.shiftKey && event.key === "!") {
+                        score = score + 100;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        console.log("Score + 100 = " + score);
+                        changeScore = false;
+                        console.log("Score change on cooldown");
+                        setTimeout(() => changeScore = true, 1000);
+                        console.log("Score change cooldown disabled");
+                    } else if (event.shiftKey && event.key === "@") {
+                        score = score + 200;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        console.log("Score + 200 = " + score);
+                        changeScore = false;
+                        console.log("Score change on cooldown");
+                        setTimeout(() => changeScore = true, 1000);
+                        console.log("Score change cooldown disabled");
+                    } else if (event.shiftKey && event.key === "#") {
+                        score = score + 300;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        console.log("Score + 300 = " + score);
+                        changeScore = false;
+                        console.log("Score change on cooldown");
+                        setTimeout(() => changeScore = true, 1000);
+                        console.log("Score change cooldown disabled");
+                    } else if (event.shiftKey && event.key === "$") {
+                        score = score + 400;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        console.log("Score + 400 = " + score);
+                        changeScore = false;
+                        console.log("Score change on cooldown");
+                        setTimeout(() => changeScore = true, 1000);
+                        console.log("Score change cooldown disabled");
+                    } else if (event.shiftKey && event.key === "%") {
+                        score = score + 500;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                        console.log("Score + 500 = " + score);
+                        changeScore = false;
+                        console.log("Score change on cooldown");
+                        setTimeout(() => changeScore = true, 1000);
+                        console.log("Score change cooldown disabled");
                     }
                 }
             });
