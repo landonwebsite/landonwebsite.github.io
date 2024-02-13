@@ -66,8 +66,7 @@
             document.getElementById("body").addEventListener("keydown", function (event) {
             	console.log("Key Press");
                 if (changeScore) { 
-                    if (event.shiftKey) {
-                        alert("SHIFT");
+                    if (event.shiftKey === true) {
                         if (event.key === "!") {
                             score = score + 100;
                             document.getElementById("score").innerHTML = "Score: " + score;
