@@ -67,6 +67,7 @@
             	console.log("Key Press");
                 if (changeScore) { 
                     if (event.shiftKey) {
+                        alert("SHIFT");
                         if (event.key === "!") {
                             score = score + 100;
                             document.getElementById("score").innerHTML = "Score: " + score;
