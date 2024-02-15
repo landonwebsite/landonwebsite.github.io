@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Jeopardy Buzzer for the Bronze Battlers
+        </title>
+        <style>
+            body {
+                background-color: #38761d;
+            }
+            #buzzer {
+                background-color: lime;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <div id="image">
+            <a href="#buzzer">
+                <img src="bb.png" alt="Bronze Battlers Flag" height="100%" width="100%">
+            </a>
+        </div>
+        <div id="buzzer">
+            <h1 id="score">Score: 0</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>   
+        <script>
+            let score = 0;
+            document.getElementById("body").addEventListener("keydown", function (event) {
+            	console.log("Key Press");
+                if (event.shiftKey && event.key === "!") {
+                    if (event.ctrlKey) {
+                        score = score - 100;
+                        console.log("Score - 100 = " + score);
+                    } else {
+                        score = score + 100;
+                        console.log("Score + 100 = " + score);
+                    }
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                } else if (event.shiftKey && event.key === "@") {
+                    if (event.ctrlKey) {
+                        score = score - 200;
+                        console.log("Score - 200 = " + score);
+                    } else {
+                        score = score + 200;
+                        console.log("Score + 200 = " + score);
+                    }
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                } else if (event.shiftKey && event.key === "#") {
+                    if (event.ctrlKey) {
+                        score = score - 300;
+                        console.log("Score - 300 = " + score);
+                    } else {
+                        score = score + 300;
+                        console.log("Score + 300 = " + score);
+                    }
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                } else if (event.shiftKey && event.key === "$") {
+                    if (event.ctrlKey) {
+                        score = score - 400;
+                        console.log("Score - 400 = " + score);
+                    } else {
+                        score = score + 400;
+                        console.log("Score + 400 = " + score);
+                    }
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                } else if (event.shiftKey && event.key === "%") {
+                    if (event.ctrlKey) {
+                        score = score - 500;
+                        console.log("Score - 500 = " + score);
+                    } else {
+                        score = score + 500;
+                        console.log("Score + 500 = " + score);
+                    }
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                } else if (event.shiftKey && event.key === ")") {
+                    score = 0;
+                    console.log("Score reset to 0");
+                    document.getElementById("score").innerHTML = "Score: " + score;
+                }
+            });
+        </script>
+    </body>
+</html>
