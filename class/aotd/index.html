@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Algebra of the day
+    </title>
+  </head>
+  <body>
+    <a href="https://landonwebsite.github.io/class/aotd" id="daily">Daily</a>
+    <script>
+      let day = date.getDate();
+      let month = date.getMonth();
+      let year = date.getFullYear();
+
+      document.getElementById("daily").href = "https://landonwebsite.github.io/class/aotd/problems/" + year + "/" + month + "/" + day;
+    </script>
+  </body>
+</html>
